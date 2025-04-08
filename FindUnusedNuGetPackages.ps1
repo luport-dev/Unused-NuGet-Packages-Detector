@@ -1,5 +1,6 @@
 param (
-    [string]$projectPath = "c:\Repositories\PTA\PTA.LGX"
+    # Path to the project directory to analyze
+    [string]$projectPath = (Get-Location).Path
 )
 
 Write-Host "Analyzing NuGet package usage in $projectPath" -ForegroundColor Cyan
